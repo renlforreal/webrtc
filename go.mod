@@ -17,7 +17,7 @@ require (
 	github.com/pion/srtp/v2 v2.0.15
 	github.com/pion/stun v0.6.0
 	github.com/pion/transport/v2 v2.2.1
-	github.com/renlforreal/interceptor v1.0.1
+	github.com/renlforreal/interceptor v1.0.2
 	github.com/sclevine/agouti v3.0.0+incompatible
 	github.com/stretchr/testify v1.8.4
 	golang.org/x/net v0.10.0
