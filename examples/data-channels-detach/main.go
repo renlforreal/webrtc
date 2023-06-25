@@ -10,8 +10,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/pion/webrtc/v3"
-	"github.com/pion/webrtc/v3/examples/internal/signal"
+	"github.com/renlforreal/webrtc/v3"
+	"github.com/renlforreal/webrtc/v3/examples/internal/signal"
 )
 
 const messageSize = 15

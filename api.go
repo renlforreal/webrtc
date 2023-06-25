@@ -7,8 +7,8 @@
 package webrtc
 
 import (
-	"github.com/pion/interceptor"
 	"github.com/pion/logging"
+	"github.com/renlforreal/interceptor"
 )
 
 // API allows configuration of a PeerConnection

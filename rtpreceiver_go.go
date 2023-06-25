@@ -6,7 +6,7 @@
 
 package webrtc
 
-import "github.com/pion/interceptor"
+import "github.com/renlforreal/interceptor"
 
 // SetRTPParameters applies provided RTPParameters the RTPReceiver's tracks.
 //

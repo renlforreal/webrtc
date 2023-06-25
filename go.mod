@@ -1,4 +1,4 @@
-module github.com/pion/webrtc/v3
+module github.com/renlforreal/webrtc/v3
 
 go 1.13
 
@@ -8,7 +8,6 @@ require (
 	github.com/pion/datachannel v1.5.5
 	github.com/pion/dtls/v2 v2.2.7
 	github.com/pion/ice/v2 v2.3.8
-	github.com/pion/interceptor v0.1.17
 	github.com/pion/logging v0.2.2
 	github.com/pion/randutil v0.1.0
 	github.com/pion/rtcp v1.2.10
@@ -18,6 +17,7 @@ require (
 	github.com/pion/srtp/v2 v2.0.15
 	github.com/pion/stun v0.6.0
 	github.com/pion/transport/v2 v2.2.1
+	github.com/renlforreal/interceptor v1.0.0
 	github.com/sclevine/agouti v3.0.0+incompatible
 	github.com/stretchr/testify v1.8.4
 	golang.org/x/net v0.10.0

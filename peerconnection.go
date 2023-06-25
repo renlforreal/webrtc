@@ -20,13 +20,13 @@ import (
 	"time"
 
 	"github.com/pion/ice/v2"
-	"github.com/pion/interceptor"
 	"github.com/pion/logging"
 	"github.com/pion/rtcp"
 	"github.com/pion/sdp/v3"
 	"github.com/pion/srtp/v2"
-	"github.com/pion/webrtc/v3/internal/util"
-	"github.com/pion/webrtc/v3/pkg/rtcerr"
+	"github.com/renlforreal/interceptor"
+	"github.com/renlforreal/webrtc/v3/internal/util"
+	"github.com/renlforreal/webrtc/v3/pkg/rtcerr"
 )
 
 // PeerConnection represents a WebRTC connection that establishes a
@@ -192,6 +192,12 @@ func (api *API) NewPeerConnection(configuration Configuration) (*PeerConnection,
 	pc.interceptorRTCPWriter = pc.api.interceptor.BindRTCPWriter(interceptor.RTCPWriterFunc(pc.writeRTCP))
 
 	return pc, nil
+}
+
+func (pc *PeerConnection) RunRtcpInterceptor(interval time.Duration) {
+	if pc.interceptorRTCPWriter != nil {
+		pc.api.interceptor.Run(pc.interceptorRTCPWriter, interval)
+	}
 }
 
 // initConfiguration defines validation of the specified Configuration and
